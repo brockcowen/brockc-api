@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-mongoose.connect(process.env.MONGO_HOST + '/api')
+
 app.use('/', index);
 app.use('/api', api);
 app.use('/users', users);

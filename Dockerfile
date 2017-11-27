@@ -6,7 +6,7 @@ COPY . /usr/api
 WORKDIR /usr/api
 RUN npm install --production
 
-ENV PORT 3000
+ENV PORT 4000
 EXPOSE  $PORT
 
-CMD ["node", "start"]
+CMD ["node", "start:dev"]
